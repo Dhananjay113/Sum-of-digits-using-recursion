@@ -1,0 +1,14 @@
+#include<stdio.h>
+ int main()
+{
+    int a;
+    printf("Enter the number : ");   //The number is receved
+    scanf("%d",&a);
+    printf("%d",add_digit(a));
+}
+
+int add_digit(a)
+{
+    if(a!=0)                          //The condition is checked 
+    return(a%10 + add_digit(a/10));   //The operation od splitting the and adding the digits 
+}
